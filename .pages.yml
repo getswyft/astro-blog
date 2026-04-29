@@ -19,6 +19,12 @@ content:
                 type: string
               - name: content
                 type: string
+              - name: cover
+                label: Cover image
+                type: image
+                options:
+                  media: images
+                  path: public/images
           - name: text
             fields:
               - name: body
