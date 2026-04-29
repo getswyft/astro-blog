@@ -113,6 +113,7 @@ content:
     label: Topics
     type: collection
     filename: "{primary}.md"
+    value: {title}
     path: src/content/topics
     view:
       fields: [ title ]
