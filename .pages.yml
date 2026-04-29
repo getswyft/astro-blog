@@ -112,10 +112,11 @@ content:
   - name: topics
     label: Topics
     type: collection
-    filename: "{primary}.md"
+    filename: "{slug}.md"
     value: {title}
     path: src/content/topics
     view:
       fields: [ title ]
     fields:
       - { name: title, label: Title, type: string }
+      - { name: slug, label: Slug, type: string }
