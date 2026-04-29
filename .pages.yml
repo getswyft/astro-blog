@@ -107,6 +107,9 @@ content:
           max: 5
       - { name: tags, label: Tags, type: string, list: true }
       - { name: description, label: Description, type: string }
+      - name: seo
+        component: seo
+        label: Meta
       - { name: body, label: Body, type: rich-text }
   - name: topics
     label: Topics
@@ -116,14 +119,3 @@ content:
       fields: [ title ]
     fields:
       - { name: title, label: Title, type: string }
-  - name: seo
-    type: object
-    list:
-      collapsible:
-        collapsed: true
-        summary: "{title} ({index})"
-    fields:
-      - name: seo_title
-        type: string
-      - name: seo_title
-        type: string
