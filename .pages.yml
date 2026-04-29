@@ -88,7 +88,7 @@ content:
     type: collection
     path: src/content/blog
     view:
-      fields: [ title, draft, date ]
+      fields: [ title, author, slug,  ]
     fields:
       - { name: author, label: Author, type: string }
       - { name: pubDatetime, label: Date, type: date }
@@ -98,13 +98,11 @@ content:
       - { name: slug, label: Slug, type: string }
       - { name: featured, label: Featured, type: boolean }
       - { name: draft, label: Draft, type: boolean }
-      - name: topics
+      - name: topic
         type: reference
         options:
           collection: topics
-          multiple: true
-          min: 1
-          max: 5
+          multiple: false
       - { name: tags, label: Tags, type: string, list: true }
       - { name: description, label: Description, type: string }
       - name: seo
