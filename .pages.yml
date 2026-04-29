@@ -14,7 +14,11 @@ content:
         blockKey: type
         blocks:
           - name: hero
-            component: hero
+            fields:
+              - name: title
+                type: string
+              - name: content
+                type: string
           - name: text
             fields:
               - name: body
@@ -38,6 +42,12 @@ content:
                     type: string
                   - name: text
                     type: rich-text
+                  - name: cover
+                    label: Cover image
+                    type: image
+                    options:
+                      media: images
+                      path: public/images
           - name: gallery
             label: Gallery
             type: image
