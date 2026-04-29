@@ -14,6 +14,21 @@ content:
         list: true
         blockKey: type
         blocks:
+          - name: hero
+            component: hero
+          - name: text
+            fields:
+              - name: body
+                type: rich-text
+          - name: cta
+            fields:
+              - name: button
+                type: object
+                fields:
+                  - name: label
+                    type: string
+                  - name: url
+                    type: string
           - name: faqs
             fields:
               - name: items
@@ -24,6 +39,15 @@ content:
                     type: string
                   - name: text
                     type: rich-text
+          - name: gallery
+            label: Gallery
+            type: image
+            options:
+              multiple:
+                max: 6
+              unique: true
+              extensions: [jpg, png, webp]
+              rename: true
   - name: about
     label: About
     type: file
